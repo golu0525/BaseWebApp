@@ -8,17 +8,17 @@
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
 
-    <% include ../helpers/navbar %>
-    <h1>My First Web App</h1>
-    <h5>which is on node.js and deployed by heroku platform</h5>
+    <h1 class="heade-ewb">WEATHER API</h1>
+
   </div>
 
-  <p>Click on the button for a surprise.</p>
+  <input type="text" name="search" id="search" placeholder="Enter City Name">
+<button type="button" onclick="searchWeather()">Search</button>
 
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
 
-  <div id="image"></div>
-   
+<div class="city"></div>
+<div class="temp"></div>
+<div class="error-message"></div>
 </body>
 
 </html>
